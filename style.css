@@ -1,0 +1,12 @@
+h1, h3 {
+    color: white;
+    font-family: "Josefin Sans";
+    margin: 8px;
+}
+
+.coverText {
+    font-size: 72px;
+    @media (max-width: 600px) {
+        font-size: 48px;
+    }
+}
