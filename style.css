@@ -1,12 +1,121 @@
-h1, h3 {
+h1, h2, h3, h4, h5, h6 {
     color: white;
     font-family: "Josefin Sans";
     margin: 8px;
 }
 
-.coverText {
-    font-size: 72px;
+h1 {
+    font-size: 56pt
+}
+
+h2  {
+    font-size: 30pt
+}
+
+h3 {
+    font-size: 24pt
+}
+
+h4  {
+    font-size: 20pt
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: hsl(220 50% 80%);
+}
+
+section {
+    padding: 16px;
+}
+
+.headerText {
     @media (max-width: 600px) {
-        font-size: 40px;
+        font-size: 20pt
+    };
+    @media (max-width: 400px) {
+        font-size: 14pt
+    };
+}
+
+.coverTextEmphasis {
+    color: hsl(220 100% 60%);
+    font-size: 72pt;
+    @media (max-width: 600px) {
+        font-size: 48pt;
     }
+}
+
+.coverText {
+    @media (max-width: 600px) {
+        font-size: 40pt;
+    }
+}
+
+.centeredSection {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    @media (max-width: 1200px) {
+        display:flex;
+    }
+}
+
+.image1 {
+    @media (max-width: 1200px) {
+        display:none;
+    };
+    border: solid hsl(220 100% 60%);
+    box-shadow: 0 0 45px hsl(220 100% 60%)
+}
+
+.image2 {
+    display:none;
+    @media (max-width: 1200px) {
+        display:block;
+    };
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: top;
+    border: solid hsl(220 100% 60%);
+    box-shadow: 0 0 45px hsl(220 100% 60%);
+    width: 500px;
+    @media (max-width: 600px) {
+        width: 300px;
+    };
+}
+
+.narrow {
+    display:none;
+    @media (max-width: 800px) {
+        display:block;
+    }
+}
+
+.wide {
+    display:block;
+    @media (max-width: 800px) {
+        display:none;
+    }
+}
+
+.email {
+    @media (max-width: 600px) {
+        font-size: 8pt;
+    };
+}
+
+.insta {
+    @media (max-width: 600px) {
+        font-size: 12pt;
+    };
 }
